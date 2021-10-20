@@ -1,0 +1,36 @@
+.brand {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 11rem;
+
+  &__logo {
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+  }
+
+  &__container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    position: relative;
+  }
+
+  &__buttons {
+    position: absolute;
+    right: 0rem;
+    bottom: -40%;
+  }
+
+  &__button {
+    background-color: rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: var(--container-color);
+    }
+
+    &:hover .button--icon {
+      color: var(--text-color-white);
+    }
+  }
+}

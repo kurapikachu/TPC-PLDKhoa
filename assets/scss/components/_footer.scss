@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--blue-color);
+
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--text-color-white);
+  }
+
+  &__title {
+    color: var(--container-color);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+    position: relative;
+    margin-bottom: var(--mb-0-5);
+
+    &::before {
+      content: "";
+      background-color: var(--container-color);
+      position: absolute;
+      height: 1px;
+      width: 100px;
+      top: 45%;
+      left: -20%;
+    }
+  }
+
+  &__call {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--biggest-font-size);
+  }
+
+  &__contact {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 4.5rem;
+    gap: 2rem;
+
+    &-1,
+    &-2 {
+      position: relative;
+    }
+    &-1::after {
+      content: "Contact 1: LE HUNG DUONG";
+      position: absolute;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-weight-medium);
+      color: rgba(255, 255, 255, 0.6);
+      left: 0;
+      bottom: -1rem;
+    }
+
+    &-2::after {
+      content: "Contact 1: LE VAN TRINH";
+      position: absolute;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-weight-medium);
+      color: rgba(255, 255, 255, 0.6);
+      left: 0;
+      bottom: -1rem;
+    }
+  }
+
+  &__address {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  &__location {
+    font-size: var(--small-font-size);
+    line-height: 22px;
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 0.5rem;
+
+    &-link {
+      display: inline-block;
+      border-radius: 50%;
+
+      & i {
+        padding: 0.5rem;
+        border-radius: 50%;
+      }
+
+      & .bxl-facebook {
+        background-color: #3b5998;
+      }
+      & .bxl-twitter {
+        background-color: #41a1f2;
+      }
+      & .bxl-youtube {
+        background-color: #ea412c;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__copy {
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 10%;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+

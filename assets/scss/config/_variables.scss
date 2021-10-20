@@ -1,0 +1,48 @@
+:root {
+  --header-height: 8.125rem;
+
+  /*========== Colors ==========*/
+  --bg-color: linear-gradient(180deg, #f2822b 0%, #f15b40 100%);
+
+  --blue-color: #061431;
+  --container-color: #f15b40;  
+  --container-color-light: #f2822b;
+
+  --text-color-black: #000;
+  --text-color-white: #fff;
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== Font and typography ==========*/
+  --body-font: SF Pro Display;
+
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  @media screen and (min-width: 992px) {
+    --biggest-font-size: 2.5rem;
+    --bigger-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.75rem;
+  }
+  /*========== Font weight ==========*/
+  --font-weight-normal: 300;
+  --font-weight-medium: 400;
+  --font-weight-bold: 600;
+  --font-weight-black: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}

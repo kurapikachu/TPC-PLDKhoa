@@ -1,0 +1,126 @@
+.header {
+  border-bottom: 5px solid var(--container-color);
+  &__contact {
+    background-color: var(--blue-color);
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    display: flex;
+    font-size: var(--small-font-size);
+    text-transform: uppercase;
+
+    &-item {
+      margin: 1rem;
+
+      &-2 {
+        padding: 0 0.5rem;
+        border-left: 0.5px solid rgba(255, 255, 255, 0.4);
+        border-right: 0.5px solid rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    &-subtitle {
+      color: var(--container-color);
+    }
+
+    &-detail {
+      color: var(--text-color-white);
+    }
+  }
+
+  &__search {
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    font-size: var(--small-font-size);
+
+    &-icon {
+      color: var(--container-color-light);
+    }
+  }
+}
+
+.nav {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__close,
+  &__toggle {
+    display: none;
+    cursor: pointer;
+  }
+
+  &__logo {
+    margin-right: 1.25rem;
+  }
+
+  &__content {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+
+    &-list {
+      padding-left: 1.25rem;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      color: var(--text-color-black);
+      display: inline-flex;
+      align-items: center;
+
+      &:hover .nav__content-icon {
+        background: linear-gradient(180deg, #f15b40 0%, #ed212b 100%);
+        color: var(--text-color-white);
+      }
+    }
+
+    &-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      transition: 0.3s;
+      vertical-align: middle;
+    }
+  }
+  &__img {
+    width: 115px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  &__link {
+    display: inline-flex;
+    color: var(--text-color-black);
+    font-size: var(--normal-font-size);
+    transition: 0.3s;
+    align-items: center;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+    height: 100%;
+    padding: 0 0.75rem;
+
+    &:hover {
+      color: var(--text-color-white);
+      background: var(--container-color);
+      font-weight: 600;
+    }
+  }
+}
+
+

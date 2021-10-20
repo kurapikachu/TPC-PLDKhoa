@@ -1,0 +1,127 @@
+.about {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    &-1 {
+      width: 370px;
+      z-index: var(--z-tooltip);
+    }
+    &-2-wrapper {
+      position: absolute;
+      right: 5rem;
+      bottom: 2rem;
+    }
+    &-2 {
+      width: 300px;
+
+      &-button {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 1rem;
+        font-size: 2rem;
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &-3 {
+      width: 170px;
+    }
+  }
+
+  &__data {
+    padding-right: 1.5rem;
+  }
+
+  &__title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-weight-black);
+    margin-bottom: var(--mb-1-5);
+
+    &-orange {
+      color: var(--container-color);
+    }
+
+    &-tpc {
+      display: inline-block;
+      padding: 10px 17px;
+      font-size: 18px;
+      background-color: var(--container-color-light);
+      color: var(--text-color-white);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+      border-radius: 100px;
+      vertical-align: middle;
+    }
+  }
+
+  &__subtitle {
+    font-style: italic;
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem 1rem;
+    border-left: 1px solid #f15b40;
+    margin-bottom: var(--mb-1-5);
+  }
+
+  &__description {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1-5);
+    line-height: 20px;
+  }
+
+  &__buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  &__item {
+    background-color: var(--blue-color);
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 0 3rem 1rem;
+    position: relative;
+    column-gap: 1rem;
+    border-radius: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      background: var(--bg-color);
+    }
+
+    &:hover &-icon {
+      color: var(--text-color-white);
+    }
+
+    &:hover .about__button {
+      background-color: var(--text-color-white);
+    }
+
+    &:hover .about__button .button--icon {
+      color: var(--container-color);
+    }
+
+    &-title {
+      color: var(--text-color-white);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--bigger-font-size);
+    }
+    &-icon {
+      color: var(--container-color-light);
+      font-size: 3rem;
+      display: inline;
+      width: 40px;
+      height: 40px;
+      transition: 0.3s;
+    }
+  }
+  &__button {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
+}

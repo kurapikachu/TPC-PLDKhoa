@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font), sans-serif;
+  color: var(--text-color-black);
+  max-width: 1920px;
+  font-size: var(--normal-font-size);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  font-family: var(--body-font);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-bold);
+}
